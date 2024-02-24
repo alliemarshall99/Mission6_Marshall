@@ -10,9 +10,6 @@
     <title>Add Movie</title>
 </head>
 <body>
-
- 
-
     <h1>Add a New Movie</h1>
 
     <form asp-controller="Home" asp-action="AddFilm" method="post">
@@ -32,15 +29,12 @@
             <option value="Family">Family</option>
             <option value="VHS">VHS</option>
         </select>
-        
-        <label for="Director">Director:</label>
-        <input type="text" name="Director" required/>
 
+        <label for="Director">Director:</label>
+        <input type="text" name="Director" required />
 
         <label for="Year">Year:</label>
-        <input type="text" name="Year" required/>
-
-        
+        <input type="text" name="Year" required />
 
         <label for="Rating">Rating:</label>
         <select name="Rating">
