@@ -68,6 +68,7 @@ namespace Mission6_Marshall.Controllers
                 movie.Rating = updatedMovie.Rating;
                 movie.Edited = updatedMovie.Edited;
                 movie.LentTo = updatedMovie.LentTo;
+                movie.CopiedToPlex = updatedMovie.CopiedToPlex;
                 movie.Notes = updatedMovie.Notes;
 
                 _context.SaveChanges();

@@ -25,7 +25,7 @@ namespace Mission6_Marshall.Models
         public string? LentTo { get; set; }
 
         [Required]
-        public int CopiedToPlex { get; set; }
+        public required int CopiedToPlex { get; set; }
 
         public string? Notes { get; set; }
 

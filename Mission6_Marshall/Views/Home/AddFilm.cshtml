@@ -34,7 +34,8 @@
         <input type="text" name="Director" required />
 
         <label for="Year">Year:</label>
-        <input type="text" name="Year" required />
+        <input type="number" name="Year" required min="1888" />
+
 
         <label for="Rating">Rating:</label>
         <select name="Rating">
@@ -44,14 +45,31 @@
             <option value="R">R</option>
         </select>
 
-        <label for="Edited">Edited:</label>
-        <input type="checkbox" name="Edited" />
+        <div class="form-group">
+            <label asp-for="Edited">Edited:</label>
+            <select asp-for="Edited" class="form-control">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <span asp-validation-for="Edited" class="text-danger"></span>
+        </div>
 
         <label for="LentTo">Lent To:</label>
         <input type="text" name="LentTo" />
 
+        <div class="form-group">
+            <label asp-for="CopiedToPlex">Copied to Plex:</label>
+            <select asp-for="CopiedToPlex" class="form-control">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <span asp-validation-for="CopiedToPlex" class="text-danger"></span>
+        </div>
+
         <label for="Notes">Notes:</label>
         <input type="text" name="Notes" maxlength="25" />
+
+
 
         <button type="submit">Submit</button>
     </form>
